@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Turorial como instalar ckeditor</title>
+    <meta name="description" content="instalacion de ckeditor, install ckeditor, how to use ckeditor, configurar ckeditor">
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<a href="http://darwindeveloper.com"> Encuentra aquí más tutoriales de ckeditor</a><br>
+<div class="container-fluid">
+    <div id="editor">
+    </div>
+</div>
+
+<script src="jquery.2.1.1.min.js"></script>
+<script src="ckeditor/ckeditor.js"></script>
+<script>
+    var editor;
+    $(function(){
+
+        //confiramos la altura del editor
+        var config = {
+            height: 356
+        };
+
+        editor=CKEDITOR.replace( 'editor', config );
+    });
+</script>
+</body>
+</html>
